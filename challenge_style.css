@@ -38,11 +38,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, input, labe
 
 h2 {
   margin: 0 auto;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.75em;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
   font-weight: 600;
-  margin-bottom: 20px;
-  color: crimson;
+  margin-bottom: 8px;
+  color: darkblue;
   line-height: 1.2;
 }
 
@@ -69,7 +69,7 @@ h3 {
   box-shadow: 1px 2px 15px 2px #3574a0;
 }
 
-.challenge_content {
+.challenge {
   margin: 0 auto;
   padding:15px 15px;
   width: 500px;
@@ -80,14 +80,14 @@ h3 {
 }
 
 .button {
-  background: DarkBlue;
+  background: #3f8abf;
   padding: 1px 18px 0 20px;
   margin: 20px auto;
   font-family: "Varela Round", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.00em;
+  font-size: .85em;
   color: white;
   font-weight: 500;
-  border: 3px solid #ffff00;
+  border: 3px solid #3f8abf;
   outline: none;
   cursor: pointer;
   display: -moz-inline-stack;
@@ -107,8 +107,8 @@ h3 {
   transition: 0.3s;
 }
 .button:hover {
-  background: #006600;
-  border-color: #ff9900;
+  background: #397cac;
+  border-color: #397cac;
   -webkit-box-shadow: 0 2px 0 0 #2c6085;
   -moz-box-shadow: 0 2px 0 0 #2c6085;
   box-shadow: 0 2px 0 0 #2c6085;

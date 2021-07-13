@@ -8,26 +8,27 @@
     <body>
         <div class="main">
 			<h2>Krabby Patty Restaurant Chant:</h2>
-			<div class='challenge_content' id="challenge_content">
-				<input type="button" class="button" value="Get Song" id="btn_content" onclick="getContent();"/>
+			<div class="challenge" id="challenge">
+				<input type="button" class="button" value="Get Challenge" id="btn_content" onclick="getContent();"/>
 			</div>
 		<script type="text/javascript">
 		
 			// Sets up the xml http request object
-			var x = new XMLHttpRequest();
+			var challenge = new XMLHttpRequest();
 			
-			// STEP 2: Prepares the open ajax request
-			x.open("GET", "challenge_content.html", true);
+			// Prepares the open ajax request
+			challenge.open('GET', 'challenge_content.html', true);
 						
 			// Defines the ajax response callback method
-			x.onreadystatechange = function() {
-				if (x.readyState == 4) {
-					document.getElementById("btn_content").innerHTML = x.responseText;
+			challenge.onreadystatechange = function(){
+				if (challenge.readyState == 4){
+					document.getElementById('challenge').innerHTML = challenge.responseText;
 				}
 			}
 			// Sends the ajax request for data
-			function getContent() {
-				x.send();
+			function getContent(){
+				challenge.send();
+					document.getElementById('btn_content').style.display = 'none';
 			}
 					
 		</script>
